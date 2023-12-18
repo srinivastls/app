@@ -1,1 +1,2 @@
 scikit-learn==1.2.2
+opencv==3.1
