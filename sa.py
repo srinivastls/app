@@ -1,9 +1,8 @@
-from cv2 import *
+
 import numpy as np
 import streamlit as st
 from PIL import Image
-import io
-
+import cv2
 def main():
     st.title("Image Processing App")
 
