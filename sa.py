@@ -49,10 +49,6 @@ def main():
         
         my_final_img_rgb = cv2.cvtColor(final_img, cv2.COLOR_BGR2RGB)
 
-        my_img_rgb=cv2.cvtColor(my_img, cv2.COLOR_BGR2RGB)
-            # Display processed images
-        st.image(my_img_rgb, caption="Original Image", use_column_width=True)
-        st.image(background_im, caption="New Background", use_column_width=True)
         st.image(my_final_img_rgb, caption="Final Image", use_column_width=True)
 
 if __name__ == "__main__":
