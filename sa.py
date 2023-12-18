@@ -5,8 +5,8 @@ import cv2
 def main():
     st.title("Image Processing App")
 
-    uploaded_file = st.file_uploader("Choose a file", type=["jpg", "jpeg"])
-    background_file =st.file_uploader("Choose one more file", type=["jpg", "jpeg"])
+    uploaded_file = st.file_uploader("Choose a file to which you want to change background", type=["jpg", "jpeg"])
+    background_file =st.file_uploader("Choose a file for new baackground", type=["jpg", "jpeg"])
     if (uploaded_file is not None and background_file is not None):
         image = Image.open(uploaded_file)
         background_im=Image.open(background_file)
